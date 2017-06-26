@@ -1,0 +1,485 @@
+object Form1: TForm1
+  Left = 234
+  Height = 453
+  Top = 143
+  Width = 802
+  Caption = 'Form1'
+  ClientHeight = 453
+  ClientWidth = 802
+  LCLVersion = '1.6.2.0'
+  object DBGrid1: TDBGrid
+    Left = 34
+    Height = 184
+    Top = 216
+    Width = 734
+    Color = clWindow
+    Columns = <    
+      item
+        Color = cl3DLight
+        ReadOnly = True
+        Title.Caption = 'MATR'
+        FieldName = 'MATR'
+      end    
+      item
+        Color = cl3DLight
+        ReadOnly = True
+        Title.Caption = 'FF'
+        FieldName = 'FF'
+      end    
+      item
+        Title.Caption = 'ISENTO'
+        FieldName = 'ISENTO'
+      end    
+      item
+        Title.Caption = 'FORA'
+        FieldName = 'FORA'
+      end    
+      item
+        Title.Caption = 'NOME'
+        FieldName = 'NOME'
+      end    
+      item
+        Title.Caption = 'PASEP'
+        FieldName = 'PASEP'
+      end    
+      item
+        Title.Caption = 'DTNASC'
+        FieldName = 'DTNASC'
+      end    
+      item
+        Title.Caption = 'DTENT'
+        FieldName = 'DTENT'
+      end    
+      item
+        Title.Caption = 'COD'
+        FieldName = 'COD'
+      end    
+      item
+        Title.Caption = 'REFER'
+        FieldName = 'REFER'
+      end    
+      item
+        Title.Caption = 'VALOR'
+        FieldName = 'VALOR'
+      end    
+      item
+        Title.Caption = 'INSSANT'
+        FieldName = 'INSSANT'
+      end    
+      item
+        Title.Caption = 'INSSATU'
+        FieldName = 'INSSATU'
+      end    
+      item
+        Title.Caption = 'DIFERENCA'
+        FieldName = 'DIFERENCA'
+      end    
+      item
+        Title.Caption = 'VLRFALTA'
+        FieldName = 'VLRFALTA'
+      end    
+      item
+        Title.Caption = 'VLRFERANT'
+        FieldName = 'VLRFERANT'
+      end    
+      item
+        Title.Caption = 'VLRSALFAM'
+        FieldName = 'VLRSALFAM'
+      end    
+      item
+        Title.Caption = 'VLRSALMAT'
+        FieldName = 'VLRSALMAT'
+      end    
+      item
+        Title.Caption = 'CODLOTA'
+        FieldName = 'CODLOTA'
+      end    
+      item
+        Title.Caption = 'LOTACAO'
+        FieldName = 'LOTACAO'
+      end    
+      item
+        Title.Caption = 'BASE'
+        FieldName = 'BASE'
+      end    
+      item
+        Title.Caption = 'MVINC'
+        FieldName = 'MVINC'
+      end    
+      item
+        Title.Caption = 'EXONERADO'
+        FieldName = 'EXONERADO'
+      end    
+      item
+        Title.Caption = 'TOTAL'
+        FieldName = 'TOTAL'
+      end>
+    DataSource = DataSource1
+    DefaultRowHeight = 20
+    FixedColor = clInfoBk
+    FixedHotColor = clInfoBk
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 34
+    Height = 33
+    Top = 402
+    Width = 734
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 33
+    ClientWidth = 734
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 240
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Memo1: TMemo
+    Left = 344
+    Height = 90
+    Top = 8
+    Width = 424
+    Lines.Strings = (
+      'Memo1'
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 240
+    Height = 25
+    Top = 60
+    Width = 75
+    Caption = 'Button2'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object frase: TEdit
+    Left = 161
+    Height = 23
+    Top = 127
+    Width = 519
+    TabOrder = 5
+  end
+  object Button3: TButton
+    Left = 275
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'Button3'
+    OnClick = Button3Click
+    TabOrder = 6
+  end
+  object Dbf1: TDbf
+    FilePath = 'C:\Projetos\gersefip\0320173\'
+    IndexDefs = <>
+    TableName = 'RAPIDO.DBF'
+    TableLevel = 4
+    Active = True
+    FilterOptions = []
+    left = 168
+    top = 24
+    object Dbf1MATR: TStringField
+      FieldKind = fkData
+      FieldName = 'MATR'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 6
+    end
+    object Dbf1FF: TStringField
+      FieldKind = fkData
+      FieldName = 'FF'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 2
+    end
+    object Dbf1ISENTO: TStringField
+      FieldKind = fkData
+      FieldName = 'ISENTO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object Dbf1FORA: TFloatField
+      FieldKind = fkData
+      FieldName = 'FORA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1NOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 50
+    end
+    object Dbf1PASEP: TStringField
+      FieldKind = fkData
+      FieldName = 'PASEP'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 11
+    end
+    object Dbf1DTNASC: TDateField
+      FieldKind = fkData
+      FieldName = 'DTNASC'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object Dbf1DTENT: TDateField
+      FieldKind = fkData
+      FieldName = 'DTENT'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object Dbf1COD: TStringField
+      FieldKind = fkData
+      FieldName = 'COD'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 3
+    end
+    object Dbf1REFER: TStringField
+      FieldKind = fkData
+      FieldName = 'REFER'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object Dbf1VALOR: TFloatField
+      FieldKind = fkData
+      FieldName = 'VALOR'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1INSSANT: TFloatField
+      FieldKind = fkData
+      FieldName = 'INSSANT'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1INSSATU: TFloatField
+      FieldKind = fkData
+      FieldName = 'INSSATU'
+      Index = 12
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1DIFERENCA: TFloatField
+      FieldKind = fkData
+      FieldName = 'DIFERENCA'
+      Index = 13
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1VLRFALTA: TFloatField
+      FieldKind = fkData
+      FieldName = 'VLRFALTA'
+      Index = 14
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1VLRFERANT: TFloatField
+      FieldKind = fkData
+      FieldName = 'VLRFERANT'
+      Index = 15
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1VLRSALFAM: TFloatField
+      FieldKind = fkData
+      FieldName = 'VLRSALFAM'
+      Index = 16
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1VLRSALMAT: TFloatField
+      FieldKind = fkData
+      FieldName = 'VLRSALMAT'
+      Index = 17
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+      Precision = 2
+    end
+    object Dbf1CODLOTA: TStringField
+      FieldKind = fkData
+      FieldName = 'CODLOTA'
+      Index = 18
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 7
+    end
+    object Dbf1LOTACAO: TStringField
+      FieldKind = fkData
+      FieldName = 'LOTACAO'
+      Index = 19
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 28
+    end
+    object Dbf1BASE: TStringField
+      Alignment = taRightJustify
+      FieldKind = fkData
+      FieldName = 'BASE'
+      Index = 20
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 15
+    end
+    object Dbf1MVINC: TStringField
+      FieldKind = fkData
+      FieldName = 'MVINC'
+      Index = 21
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object Dbf1EXONERADO: TStringField
+      FieldKind = fkData
+      FieldName = 'EXONERADO'
+      Index = 22
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object Dbf1TOTAL1: TFloatField
+      FieldKind = fkCalculated
+      FieldName = 'TOTAL'
+      Index = 23
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Currency = True
+      MaxValue = 0
+      MinValue = 0
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = Dbf1
+    OnDataChange = DataSource1DataChange
+    left = 42
+    top = 22
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = Dbf1
+    OnCheckEOF = frDBDataSet1CheckEOF
+    left = 87
+    top = 104
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit]
+    DataType = dtDataSet
+    left = 16
+    top = 104
+  end
+end

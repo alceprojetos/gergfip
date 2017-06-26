@@ -1,0 +1,33 @@
+set HOMEDRIVE=
+set PROCESSOR_LEVEL=
+set PROCESSOR_REVISION=
+PROMPT=$P$G
+set SESSIONNAME=
+SET g:\WINDOWS
+SET CLIPPER=F200
+SET LIB=g:\WINDOWS
+set SystemDrive=
+set USERDOMAIN=
+SET USERNAME=
+set WF_RESOURCES=
+set windir=
+
+set CommonProgramFiles=
+set COMPUTERNAME=
+set ComSpec=
+set LOGONSERVER=
+set NUMBER_OF_PROCESSORS=
+set OS=
+set PATHEXT=
+set PROCESSOR_ARCHITECTURE=
+set PROCESSOR_IDENTIFIER=
+set ProgramFiles=
+set path=
+set SystemRoot=
+set TEMP=
+set TMP=
+set ALLUSERSPROFILE=
+set HOMEPATH=
+set APPDATA=
+set USERPROFILE=
+
